@@ -1,0 +1,122 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+    font-weight: 600;
+    color: #585449;
+   
+
+}
+.wrapper{
+    margin:0 auto;
+    max-width: 1280px;
+    padding: 20px;
+}
+p{
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+
+.list ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding: 0 0 0 32px;
+}
+.list ol li{
+    counter-increment: my-awesome-counter;
+    background-color: #f0eee9;
+    margin: 5px 0 0 0;
+    border-top: #686868 solid 2px;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+.list>ol>li::before, .list2>ol>li::after, .list2 ol li ol li::before ,.list ol li ol li::before{
+    content:  " ";
+    color:white; 
+    background-color: #686868;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    left:-32px;
+    top:-2px;
+    z-index: -1;
+}
+.list>ol>li:last-child:after, .list ol li::after{
+    content: counter(my-awesome-counter) " ";
+    color:white; 
+    position: absolute;
+   line-height: 16px;
+    left:-26px;
+    top:5px;
+}
+.list ol li::after{
+    left:-20px;
+}
+
+.list ol li ul{
+    list-style: circle;
+}
+.list ol li ul li{
+    counter-increment: unset;
+
+}
+
+.list ol li ul li::after{
+    counter-increment: unset;
+    display: none;
+} 
+
+
+
+
+.list2{
+    margin:50px 0 0 0;
+}
+.list2 ol{
+    padding: 0 0 0 32px;
+}
+.list2 ol li{
+    background-color: #f0eee9;
+    margin:5px 0 0 0 ;
+    border-top: #686868 solid 2px;
+    z-index: 1;
+    padding: 5px;
+    position: relative;
+  
+}
+ 
+.list2 ol li::after{
+    z-index: -1;
+}
+
+.list2 ol li ul li,.list ol li ul li{
+    border: none;
+    position: relative;
+    margin: 0;
+    padding: 2px 5px;
+    color: #585449;
+}
+.list2 ol li ol{
+   padding: 0 0 0 32px;
+}
+.list2 ol ul{
+    list-style: circle;
+    padding: 0 0 0 32px;
+}
+.list2 ol li::marker{
+    color: white;
+}
+li{
+    color: white;
+}
+.list2 ol li ul li::marker {
+    color: #585449;
+}
+
+
+
+
+

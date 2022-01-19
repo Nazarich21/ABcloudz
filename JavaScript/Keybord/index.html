@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task2</title>
+  <link rel="stylesheet" type="text/css" href="./css/zero.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="side_menu">
+      <ul>
+      <li><a href="#" onClick = "symbolPerTime(); return false" id = "symbolPerTime">Ввод последовательностей символов на время</a></li>
+      <li><a href="#" onClick = "wordPerTime(); return false" id = "wordPerTime">Ввод слов на время</a></li>
+      <li><a href="#" onClick = "textPerTime(); return false" id = "textPerTime">Ввод текста на время</a> </li>
+      <li><a href="#" onClick = "exerciseKeyboard(); return false" id = "exerciseKeyboard">Упражнение на цифровую клавиатуру</a></li> 
+      <li><p id = "listOfTasks" >Игра на время:</p></li> 
+      <li><a class="right" href="#" onClick="letterDrop(); return false" id = "dropLetter">Падающие буквы.</a></li>
+      <li><a class="right" href="#" onClick="wordDrop(); return false" id = "wordDrop">Падающие слова.</a> </li>
+      <li><a class="right" href="#" onClick="ownDrop(); return false" id = "ownDrop">Математические формулы.</a> </li>
+    </ul>
+      <label for="select" id = "language">Язык</label>
+      <select id="select" onChange="languageChange(this.value)">
+        <option value="russian" selected >Русский</option>
+        <option value="english">English</option>
+      </select>
+      
+    </div>
+    <div id="content"> 
+      <h1 id="header"></h1>
+      <div id="info">
+        <div class="time" id="time">
+          <div id="time_label">Время:</div>
+          <div id="time_amount">00:00</div>
+        </div>
+        <div class="mistakes" id="mistakes">
+          <div id="mistakes_label">Ошибки:</div>
+          <div id="mistakes_amount">0</div>
+        </div>
+        <div class="progress" id="progress">
+          <div id="progress_label">Прогресс:</div>
+          <div class="progress_wrapper">
+            <div id="progress_amount">0</div>
+            <div id="progress_total">/0</div>
+          </div>
+        </div>
+      </div>
+      <div class="text" id="initial"></div>
+      <input type="text" id="copy" onkeydown="keyTime(event)">
+     <!--  <button id="mainButton" onclick="">Нажмите чтобы начать</button> -->
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./temp/script.js"></script>
+</html>

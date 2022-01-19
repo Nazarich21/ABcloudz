@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-size:40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    border: 10px solid #61a8dd;
+    border-radius: 120px;
+    border-left-color: #5472bf;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: auto;
+
+}   
+@media screen and (max-width: 300px) {
+    .circle{
+        width: 150px;
+        height: 150px;
+        font-size: 50px;
+    }  
+     
+}

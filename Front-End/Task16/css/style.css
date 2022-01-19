@@ -1,0 +1,16 @@
+body{
+    background-color: #fff;
+}
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.box{
+    margin: 100px auto 0 auto;
+    height: 100px;
+    width: 300px;
+    background-color:#fff;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(34, 60, 80, 0.3) inset, 0px 10px 20px -10px rgba(34, 60, 80, 0.8);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(34, 60, 80, 0.3) inset,0px 10px 20px -10px rgba(34, 60, 80, 0.8);
+    box-shadow: 0px 0px 19px 0px rgba(34, 60, 80, 0.3) inset, 0px 10px 20px -10px rgba(34, 60, 80, 0.8);
+}

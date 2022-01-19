@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Serialization": {
+      "commandName": "Project",
+      "commandLineArgs": "js "
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body{
+	background-color: #f6f6f6;
+}
+table, td, th {
+    text-align: center;
+}
+table{
+	max-width: 1280px;
+    border-collapse: collapse;
+	background-color:#fff;
+	padding:10px;
+	border:1px solid #f4f4f4;
+	display: block;
+	overflow-x: auto;
+	white-space: nowrap;
+	margin:  50px auto;
+}
+tbody tr:nth-of-type(odd){
+	background-color:#f2f2f2;
+}
+.wrapper{
+	padding: 20px;
+}
+@media screen and (max-width: 400px) {
+    .wrapper{
+       font-size: 20px;
+    }
+}

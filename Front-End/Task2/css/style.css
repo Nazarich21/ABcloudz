@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    background-color:#ffffff;
+    margin-left: 50px;
+    width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+body{
+    background-color: #f6f6f6;
+}
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.custom-select,.custom-select2{
+    margin-left: 100px;
+    margin-top: 20PX;
+    position: relative;
+    margin-right: 50px;
+    display: inline-block;
+    
+}
+select{
+    width: 300px;
+    background-color:#d7dde0;
+    border:none;
+    height: 25px;
+    color: #68727e;
+
+}
+
+select::-ms-expand {
+    display: none;
+}
+input:focus, select:focus{
+    outline: none;
+}
+option{
+    background-color: white;
+    border:none;
+
+}
+.custom-arrow{
+    display: block;
+    position:absolute;
+    background: #0db5f7;
+    height: 100%;
+    width: 25px;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.custom-arrow:after{
+    content: '';
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: 3px -1px;
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+
+label{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+    height: 22px;
+}
+ 
+.container-box input,.container input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+  
+.checkmark-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fafafa;
+    border: 1px solid #9ba2a8;
+    border-radius: 2px;
+}
+
+.container-box input:checked ~ .checkmark-box {
+    background:#e9ecee url(../img/tick.png) no-repeat;
+    background-size: cover;
+}
+
+.checkmark-box:after,.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #979fa5;
+}
+
+
+.container .checkmark:after {
+    content: '';
+    position:absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: #eee;
+    border-radius: 50%;
+    background: rgb(134,141,147); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(134,141,147,1) 0%, rgba(153,161,167,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(134,141,147,1) 0%,rgba(153,161,167,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(134,141,147,1) 0%,rgba(153,161,167,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868d93', endColorstr='#99a1a7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+} 
+
+.custom-select2:before {
+    content: ' ';
+    display: block;
+    position:absolute;
+    background: #0db5f7;
+    height: 100%;
+    width: 25px;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+.custom-select2:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:50%;
+    right:11px;
+    transform:translate(0, -50%) ;
+    transform: rotate(45deg);
+    transform-origin: 16px;
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    
+}
+
+.container-2,.radio,.checkbox{
+    display: flex;
+    align-items: center;
+}
+.container-2{
+    padding: 10px 0 0 0;
+}
+.container-2 label{
+   margin: 0 0 0 20px;
+}
+.radio,.checkbox{
+    position: relative;
+}
+.custom-radio ,.custom-checkbox{
+    position: absolute;
+    opacity: 0;
+    height: 20px;
+    width:20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.container-2 .radio span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #979fa5;   
+}
+
+.custom-radio:checked +span{
+    position: relative;
+}
+.custom-radio:checked +  span::after {
+    content: '';
+    position:absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 70%;
+    height: 70%;
+    background-color: #eee;
+    border-radius: 50%;
+    background: rgb(134,141,147); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(134,141,147,1) 0%, rgba(153,161,167,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(134,141,147,1) 0%,rgba(153,161,167,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(134,141,147,1) 0%,rgba(153,161,167,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868d93', endColorstr='#99a1a7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+.container-2 .checkbox span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: #fafafa;
+    border: 1px solid #9ba2a8;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.custom-checkbox:checked +span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #9ba2a8;
+    border-radius: 2px;
+    
+    background: #e9ecee url(../img/tick.png) no-repeat;
+    background-size: cover;
+}
+.check label,.container-2 label{
+      padding: 0;   
+}
+
+@media screen and (max-width: 800px) {
+    form{
+        flex-direction: column;
+    }
+    .custom-select,.custom-select2{
+        margin: 20px 0;
+    }
+}
+
+
+

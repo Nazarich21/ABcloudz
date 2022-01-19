@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+}
+.side_menu{
+    width: 20%;
+   height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e6f1;
+    padding:  0 10px 10px 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    padding: 10px 0;
+}
+a{
+    word-wrap: break-word;
+    text-decoration: none;
+    color: black;
+}
+p,label{
+     padding: 10px 0 0 0 ;
+ }
+a:hover{
+    color: red;
+}
+.right{
+    padding: 5px 0 0 5px;
+}
+#content{
+   width: 100%;
+   height: calc(100vh - 40px);
+   background-color: #0db5f7;
+   overflow:hidden;
+   padding: 30px;
+   z-index: 1;
+}
+#initial{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#copy{
+    margin: 30px 0 0 0 ;
+    height: 50px;
+    width: 100%;
+}
+#info{
+    width: 60%;
+    background-color: #cbcaca;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.current {
+    color: #00f;
+    border-bottom: 2px solid #00f;
+}
+.done_ok {
+    color: green;
+}
+.wrong{
+    color: red;
+}
+.next {
+    color: #000;
+}
+#mistakes{
+    display: flex;
+}
+.progress_wrapper{
+    display: flex;
+}
+#word{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
